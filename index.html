@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Amulya Vibhav is a B.Tech CSE (AI and ML) student working on data analytics, machine learning and secure software.">
+  <title>Amulya Vibhav | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="#home">Amulya Vibhav</a>
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>I'm Amulya. I like finding out what data is actually saying.</h1>
+      <p>I'm a final-year B.Tech student in CSE (AI and ML). Right now I'm an IBM SkillsBuild data analytics intern, working on why telecom customers leave and how to spot them early.</p>
+      <p class="buttons">
+        <a class="btn btn-solid" href="#projects">Read about my projects</a>
+        <a class="btn btn-line" href="#contact">Get in touch</a>
+      </p>
+    </div>
+
+    <figure class="roc">
+      <svg viewBox="0 0 320 330" role="img" aria-labelledby="roc-title roc-desc">
+        <title id="roc-title">ROC curve sketch</title>
+        <desc id="roc-desc">A curve rising steeply above the diagonal chance line, representing a model with an area under the curve of 0.84.</desc>
+        <path class="area" d="M40 280 C55 160 100 70 300 20 L300 280 Z"/>
+        <path class="chance" d="M40 280 L300 20"/>
+        <path class="curve" d="M40 280 C55 160 100 70 300 20" pathLength="1"/>
+        <path class="axis" d="M40 20 V280 H300"/>
+        <text x="170" y="316" text-anchor="middle">False positive rate</text>
+        <text x="-150" y="14" text-anchor="middle" transform="rotate(-90)">True positive rate</text>
+        <text class="lbl-model" x="150" y="96">Model, AUC 0.84</text>
+        <text class="lbl-chance" x="196" y="200">Guessing</text>
+      </svg>
+      <figcaption>A sketch of a ROC curve with an area of 0.84, the score my churn model reached. Not the project's real plot.</figcaption>
+    </figure>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About me</h2>
+    <div class="two-col">
+      <div class="prose">
+        <p>I enjoy the part of a project where messy numbers turn into something a person can act on. Most of my work so far is in Python, with some SQL and C, and I've also built a small security tool because I wanted to understand how encrypted storage actually works.</p>
+        <p>I'm looking for an internship or a first role in data analytics, machine learning or software development, and I'm thinking about graduate study in computer science.</p>
+      </div>
+      <dl class="facts">
+        <dt>Education</dt>
+        <dd>B.Tech in CSE (AI and ML), Ghani Khan Choudhury Institute of Engineering and Technology, 2023 to 2027. CGPA 8.35.</dd>
+        <dt>Experience</dt>
+        <dd>Data Analytics with AI intern, IBM SkillsBuild, August 2026 to now.</dd>
+        <dt>Courses</dt>
+        <dd>NPTEL: Data Analytics with Python, Neural Networks for Computer Vision and NLP, Blockchain and its Applications. AICTE IDE Bootcamp.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skill-rows">
+      <div class="skill-row">
+        <h3>Languages</h3>
+        <ul class="chips"><li>Python</li><li>SQL</li><li>C</li><li>NoSQL</li></ul>
+      </div>
+      <div class="skill-row">
+        <h3>Data and machine learning</h3>
+        <ul class="chips"><li>Pandas</li><li>Scikit-learn</li><li>Data cleaning</li><li>Visualization</li><li>Streamlit</li></ul>
+      </div>
+      <div class="skill-row">
+        <h3>Everyday tools</h3>
+        <ul class="chips"><li>Git</li><li>GitHub</li><li>Linux</li><li>VS Code</li></ul>
+      </div>
+      <div class="skill-row">
+        <h3>Used on smaller projects</h3>
+        <ul class="chips"><li>ReactJS</li><li>NodeJS</li><li>MongoDB</li><li>Flutter</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <article class="card card-main">
+      <div>
+        <h3>Telco Customer Churn Analysis and Prediction</h3>
+        <p>I explored 7,043 customer records to see who is likely to leave and why, then trained Logistic Regression and Random Forest models. Logistic Regression did better on recall, which matters most when the goal is to catch customers before they go. The results sit in a six-page Streamlit dashboard with KPIs, segments, trends, model evaluation, feature importance and a churn-risk score.</p>
+        <p class="tech"><strong>Built with:</strong> Python, Pandas, Scikit-learn, Streamlit</p>
+      </div>
+      <dl class="stats">
+        <div><dt>Customer records</dt><dd>7,043</dd></div>
+        <div><dt>ROC-AUC</dt><dd>0.840</dd></div>
+        <div><dt>Recall</dt><dd>79.7%</dd></div>
+      </dl>
+    </article>
+
+    <div class="card-pair">
+      <article class="card">
+        <h3>SecureVault, a password manager</h3>
+        <p>An encrypted vault that works across platforms. It has secure login, password generation, search, categories and vault locking. Keys are derived with a key-derivation function and credentials are stored encrypted, with the security and business logic kept in separate layers.</p>
+        <p class="tech"><strong>Built with:</strong> Python, Cryptography, SQLite or PostgreSQL</p>
+      </article>
+      <article class="card">
+        <h3>This portfolio</h3>
+        <p>Written by hand with semantic HTML5 and one stylesheet. It uses CSS Grid and Flexbox, adapts to phones, follows the system light or dark setting, and has no JavaScript or framework.</p>
+        <p class="tech"><strong>Built with:</strong> HTML5, CSS3</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p class="contact-intro">I'm happy to hear about internships, projects or just questions about my work. Email is the fastest way to reach me.</p>
+    <ul class="contact-list">
+      <li><strong>Email</strong> <a href="mailto:amulyavibhav@gmail.com">Gmail</a></li>
+      <li><strong>GitHub</strong> <a href="https://github.com/AmulyaVibhav">GitHub</a></li>
+      <li><strong>LinkedIn</strong> <a href="https://www.linkedin.com/in/amulyavibhav">LinkedIn</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Amulya Vibhav</p>
+</footer>
+
+</body>
+</html>
